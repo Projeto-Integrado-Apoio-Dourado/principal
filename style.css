@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Kameron", serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: #DEF1FF;
+}
+
+.primeiraTela {
+    background-image: url("imagens/fundoTelaInicial.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.tituloApoioDourado {
+    margin-top: 63px;
+    margin-bottom: 200px;
+}
+
+.textoPrimeiraTela {
+    width: 80%;
+}
+
+#bemVindo {
+    font-size: 32px;
+}
+
+#bemVindoTexto {
+    font-size: 24px;
+}
+
+.botaoTelasEscolha {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+
+    width: 211px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    
+    border-radius: 10px;
+    font-size: 32px;
+}
+
+#botaoProximoTelasEscolhas {
+    bottom: 28px;
+    background-color: #399AA0;
+    gap: 14px;
+}
+
+
+#segundaTelaEscolha {
+    background-image: url("imagens/fundoTelaDesfocado.png");
+}
+
+#botaoEntrarTelasEscolhas {
+    bottom: 272px;
+    background-color: #399AA0;
+}
+
+#botaoCadastreTelasEscolhas {
+    bottom: 131px;
+    background-color: #39A08E;
+}
+
+.textoPrimeiraVez {
+    font-size: 22px;
+    position: fixed;
+}
+
+#jaTemConta {
+    bottom: 327px;
+}
+
+#primeiraVez {
+    bottom: 183px;
+}
+
+/*Tela Login*/
+
+.containerTelaLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.containerTelaLogin h1 {
+    color: #1F5E62;
+    font-size: 36px;
+
+    margin-bottom: 90px;
+}
+
+.containerTelaLogin p {
+    color: #286C60;
+    font-size: 30px;
+}
+
+.camposInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+    margin-top: 36px;
+    margin-bottom: 20px;
+}
+
+#campoPreenchimento {
+    width: 250px;
+    height: 47px;
+
+    background-color: #5D7779;
+    border-radius: 10px;
+    border: none;
+}
+
+#campoPreenchimento::-webkit-input-placeholder {
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#botaoEntrarTelaLogin {
+    position: relative;
+    background-color: #399AA0;
+    width: 183px;
+}
+
+/*Tela Cadastro*/
+
+#botaoCadastreTelaCadastro {
+    position: relative;
+    background-color: #39A08E;
+    width: 183px;
+}
+
+
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+
+    position: fixed;
+    bottom: 0px;
+
+    background-color: #EDEDED;
+    width: 100vw;
+    height: 78px;
+}
+
+.navegacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #1F5E62;
+
+    width: 33%;
+}
+
+.botaoSolicitarApoio {
+    text-decoration: none;
+    display: flex;
+    position: fixed;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 209px;
+    height: 50px;
+    border-radius: 10px;
+
+    background-color: #1C8F74;
+    font-size: 24px;
+
+    bottom: 117px;
+}
+
+.containerTelaInicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#telaSelecionada {
+    background-color: #7AA9A1;
+}
+
+/*Tela sua conta*/
+
+.suaConta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 68px;
+}
+
+#fotoDePerfil {
+    border-radius: 50%;
+}
+
+.suaConta p {
+    font-size: 32px;
+    color: #286C60;
+
+    margin-top: 14px;
+    margin-bottom: 44px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#linkSuaConta {
+    text-decoration: none;
+
+    display: flex;
+    
+    align-items: center;
+    
+    width: 270px;
+    height: 48px;
+    padding-left: 10px;
+    gap: 8px;
+
+    border-radius: 10px;
+
+    background-color: #66A297;
+}
+
+/*Dados Pessoais*/
+
+.dadosPessoais {
+    width: 70%;
+    margin-top: 23px;
+}
+
+.dadosPessoais h1 {
+    color: #286C60;
+    margin-bottom: 14px;
+}
+
+.tipoDados {
+    font-size: 20px;
+    color: #286C60;
+    margin-top: 23px;
+    margin-bottom: 12px;
+}
+
+#respostaDados {
+    font-size: 16px;
+    color: #286C60;
+}
+
+.botoesEditarEVoltar {
+    display: flex;
+    position: fixed;
+
+    bottom: 120px;
+
+    gap: 10px;
+}
+
+.editarDados {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    width: 135px;
+    height: 42px;
+    
+    background-color: #66A297;
+    border: 1px solid #66A297;
+
+    align-items: center;
+}
+
+#voltar {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    width: 125px;
+    height: 42px;
+
+    background-color: #DADADA;
+    border: solid 1px #626262;
+}
+
+.caixaFormaPagamentos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.caixaFormaCompleta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 14px;
+}
+
+#pagamento {
+    margin-bottom: 79px;
+}
+
+#formaDePagamento {
+    margin-bottom: 23px;
+}
+
+.botoesAdicionarEVoltar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+
+    gap: 32px;
+
+    bottom: 120px;
+}
+
+#adicionarPagamento {
+    width: 270px;
+    font-size: 15px;
+}
+
+#seguranca {
+    margin-bottom: 98px;
+}
+
+#emergencia {
+    margin-bottom: 54px;
+}
+
+/*Tela Histórico*/
+
+
+.containerHistorico {
+    width: 80%;
+}
+
+#historico {
+    color: black;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+#anteriores {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 62px;
+}
+
+.containerPerfilAcompanhante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #D9D9D9;
+    height: 121px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.tudoSobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tudoSobre img {
+    padding-left: 15px;
+}
+
+.valor {
+    padding-right: 15px;
+}
+
+.botaoDetalhes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    text-decoration: none;
+    background-color: #66A297;
+
+    width: 69px;
+    height: 21px;
+
+    font-size: 12px;
+}
+
+#botaoReagendar {
+    background-color: #286C60;
+
+    width: 76px;
+    height: 21px;
+}
+
+.botoesDetalhesEReagendar {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    padding-right: 15px;
+}
+
+.tudoSobre p {
+    color: #286C60;
+}
+
+.valor {
+    font-size: 24px;
+}
+
+#nomeAcompanhante {
+    font-size: 20px;
+}
+
+/*Tela para onde vamos*/
+
+.containerParaOndeVamos {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 165px;
+
+    background-color: #FFFFFF;
+}
+
+.containerParaOndeVamos p, .containerMenorParaOnde a{
+    color: #286C60;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#campoPreenchimentoParaOnde::-webkit-input-placeholder {
+    color: #286C60;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+#campoPreenchimentoParaOnde {
+    background-color: #EDEDED;
+    border: none;
+    border-radius: 10px;
+
+    width: 314px;
+    height: 50px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.containerMenorParaOnde {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.paraOndevamosSuperior {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.botoesLocalNoMapaEAgendar {
+    display: flex;
+    gap: 24px;
+}
+
+.botoesLocalNoMapaEAgendar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #EDEDED;
+    border-radius: 10px;
+
+    width: 178px;
+    height: 31px;
+}
+
+#botaoAgendar {
+    display: flex;
+    gap: 7px;
+    width: 123px;
+}
+
+/*Tela solicitar apoio*/
+
+#containerTelaSolicitar {
+    
+    height: 56px;
+}
+
+.containerSolicitarTipoApoio {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+
+    background-color: #D9D9D9;
+    width: 100vw;
+    height: 295px;
+}
+
+#solicitarApoio {
+    position:relative;
+
+    bottom: 0;
+
+    background-color: #286C60;
+    width: 248px;
+    height: 40px;
+
+    font-size: 20px;
+}
+
+.caixaBrancaApoio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+
+    width: 100vw;
+    height: 103px;
+    position: fixed;
+    bottom: 0;
+}
+
+#caixaPagamentoTelaApoio {
+    width: 90%;
+}
+
+.tiposApoio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+    gap: 13px;
+}
+
+.caixaPasseio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    width: 308px;
+    height: 61px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+#opcaoSelecionada {
+    border: 2px solid #286C60;
+}
+
+.valorSolicitacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.valorSolicitacao p {
+    color: black;
+    font-size: 15px;
+}
+
+#porHora {
+    font-size: 10px;
+}
+
+/*Tela Buscando*/
+
+.containerBuscando {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 214px;
+    gap: 17px;
+
+    background-color: #F3F3F3;
+}
+
+.containerBuscando p {
+    color: #286C60;
+    font-size: 20px;
+}
+
+.botoesCancelarEditar {
+    display: flex;
+    justify-content: space-between;
+    width: 308px;
+}
+
+.botoesCancelarEditar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    background-color: #8D2923;
+    border-radius: 10px;
+
+    width: 122px;
+    height: 29px;
+}
+
+#botaoEditarInfos {
+    background-color: #286C60;
+    width: 176px;
+}
+
+/*Tela Acompanhante*/
+
+.infosAcompanhante {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 308px;
+}
+
+.nomeBotaoPerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.nomeBotaoPerfil p {
+    font-size: 16px;
+}
+
+.nomeBotaoPerfil a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 144px;
+    height: 25px;
+    background-color: #66A297;
+    border-radius: 25px;
+}
+
+#fundoPreto {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    bottom: 0;
+}
+
+.confimarCancelamento {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    position: fixed;
+    top: 284px;
+
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    width: 267px;
+    height: 185px;
+    z-index: 1;
+}
+
+.confimarCancelamento p {
+    text-align: center;
+    width: 180px;
+    height: 90px;
+    font-size: 24px;
+}
+
+.botoesCancelarConfirmar {
+    display: flex;
+    gap: 15px;
+}
+
+.botaoCancelarSolicitacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 110px;
+    height: 36px;
+    background-color: #EAEAEA;
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+    color: #505050;
+}
+
+#botaoConfirmarCancelamento {
+    background-color: #80C1B5;
+    border: 1px solid #286C60;
+    width: 110px;
+    color: white;
+}
+
+/*Mapas*/
+
+#mapsInicial {
+    width: 100vw;
+    height: 100vh;
+}
